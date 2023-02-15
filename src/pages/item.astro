@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<!-- This example requires Tailwind CSS v3.0+ -->
+<Layout title="Club">
+    <!--
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+    <!--
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+    <div class="">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden white-3xl sm:top-[-20rem]">
+            <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+                <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                <defs>
+                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9089FC" />
+                        <stop offset="1" stop-color="#FF80B5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="px-6 pt-6 lg:px-8">
+            <nav class="flex items-center justify-between" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Supporter World</span>
+                        <img class="h-8" src="/img/logo.png" alt="">
+                    </a>
+                </div>
+        </div>
+    <div class="bg-white">
+        <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <!-- Product details -->
+            <div class="lg:max-w-lg lg:self-end">
+                <nav aria-label="Breadcrumb">
+                    <ol role="list" class="flex items-center space-x-2">
+                        <li>
+                            <div class="flex items-center text-sm">
+                                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Football</a>
+
+                                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="ml-2 h-5 w-5 flex-shrink-0 text-gray-300">
+                                    <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                                </svg>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex items-center text-sm">
+                                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Club</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="mt-4">
+                    <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Manchester United</h1>
+                </div>
+
+                <section aria-labelledby="information-heading" class="mt-4">
+                    <h2 id="information-heading" class="sr-only">Product information</h2>
+
+                    <div class="flex items-center">
+                        <p class="text-lg text-gray-900 sm:text-xl"> $220 (your supported) </p>
+
+                        <div class="ml-4 border-l border-gray-300 pl-4">
+                            <h2 class="sr-only">Reviews</h2>
+                            <div class="flex items-center">
+                                <div>
+
+                                    <p class="sr-only">4 out of 5 stars</p>
+                                </div>
+                                <p class="ml-2 text-sm text-gray-500">1624 supporters</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-6">
+                        <p class="text-base text-gray-500">Manchester United Football Club, commonly referred to as Man United (often stylised as Man Utd), or simply United, is a professional football club based in Old Trafford, Greater Manchester, England. The club competes in the Premier League, the top division in the English football league system.</p>
+                    </div>
+
+                    <div class="mt-6 flex items-center">
+                        <!-- Heroicon name: mini/check -->
+                        <svg class="h-5 w-5 flex-shrink-0 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="ml-2 text-sm text-gray-500">You currently support this club</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Product image -->
+            <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
+                <div class="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/06/Manchester-United-logo.png" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="h-full w-full object-cover object-center">
+                </div>
+            </div>
+
+            <!-- Product form -->
+            <div class="mt-10 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
+                <section aria-labelledby="options-heading">
+                    <h2 id="options-heading" class="sr-only">Product options</h2>
+
+                    <form>
+                        <div class="sm:flex sm:justify-between">
+                            <!-- Size selector -->
+                            <fieldset>
+                                <legend class="block text-sm font-medium text-gray-700">Betting Partners</legend>
+                                <div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <!-- Active: "ring-2 ring-indigo-500" -->
+                                    <div class="relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none">
+                                        <input type="radio" name="size-choice" value="18L" class="sr-only" aria-labelledby="size-choice-0-label" aria-describedby="size-choice-0-description">
+                                        <p id="size-choice-0-label" class="text-base font-medium text-gray-900">bet365</p>
+                                        <p id="size-choice-0-description" class="mt-1 text-sm text-gray-500">£15 on deposit and 8% on your bet earnings</p>
+                                        <!--
+                                          Active: "border", Not Active: "border-2"
+                                          Checked: "border-indigo-500", Not Checked: "border-transparent"
+                                        -->
+                                        <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
+                                    </div>
+
+                                    <!-- Active: "ring-2 ring-indigo-500" -->
+                                    <div class="relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none">
+                                        <a href="/">
+                                        <p id="size-choice-1-label" class="text-base font-medium text-gray-900">William Hill</p>
+                                        <p id="size-choice-1-description" class="mt-1 text-sm text-gray-500">£10 on deposit and 10% on your bet earnings</p>
+                                        <!--
+                                          Active: "border", Not Active: "border-2"
+                                          Checked: "border-indigo-500", Not Checked: "border-transparent"
+                                        -->
+                                        <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="group inline-flex text-sm text-gray-500 hover:text-gray-700">
+                                <span>Which betting partner should I sign up with?</span>
+                                <!-- Heroicon name: mini/question-mark-circle -->
+                                <svg class="ml-2 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="mt-6 text-center">
+                            <a href="#" class="group inline-flex text-base font-medium">
+                                <!-- Heroicon name: outline/shield-check -->
+                                <svg class="mr-2 h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                </svg>
+                                <span class="text-gray-500 hover:text-gray-700">Verified by Supporter.World</span>
+                            </a>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</Layout>
