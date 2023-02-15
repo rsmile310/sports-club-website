@@ -1,43 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-import clubData from '../../js/clubdata.js';
-
 const { id } = Astro.params;
 
 ---
 <!-- This example requires Tailwind CSS v3.0+ -->
 <Layout title="Club">
-    <!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-    <!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
+    <script type="text/javascript" 
+        src="/src/js/clubdata.js">
+    </script>
     <div class="">
         <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden white-3xl sm:top-[-20rem]">
             <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
@@ -59,7 +30,7 @@ const { id } = Astro.params;
                     </a>
                 </div>
         </div>
-    <div class="bg-white">
+    <div class="bg-white" x-data="Clubdata()">
         <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <!-- Product details -->
             <div class="lg:max-w-lg lg:self-end">
@@ -84,14 +55,14 @@ const { id } = Astro.params;
                 </nav>
 
                 <div class="mt-4">
-                    <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Manchester United</h1>
+                    <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" x-text="filteredClubdata.name"></h1>
                 </div>
 
                 <section aria-labelledby="information-heading" class="mt-4">
                     <h2 id="information-heading" class="sr-only">Product information</h2>
 
                     <div class="flex items-center">
-                        <p class="text-lg text-gray-900 sm:text-xl"> $220 (your supported) </p>
+                        <p class="text-lg text-gray-900 sm:text-xl" x-text="filteredClubdata.your_support + ' (your supported)'"> </p>
 
                         <div class="ml-4 border-l border-gray-300 pl-4">
                             <h2 class="sr-only">Reviews</h2>
@@ -100,13 +71,13 @@ const { id } = Astro.params;
 
                                     <p class="sr-only">4 out of 5 stars</p>
                                 </div>
-                                <p class="ml-2 text-sm text-gray-500">1624 supporters</p>
+                                <p class="ml-2 text-sm text-gray-500" x-text="filteredClubdata.all_support + ' supporters'"></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-4 space-y-6">
-                        <p class="text-base text-gray-500">Manchester United Football Club, commonly referred to as Man United (often stylised as Man Utd), or simply United, is a professional football club based in Old Trafford, Greater Manchester, England. The club competes in the Premier League, the top division in the English football league system.</p>
+                        <p class="text-base text-gray-500" x-text="filteredClubdata.description"></p>
                     </div>
 
                     <div class="mt-6 flex items-center">
@@ -122,7 +93,7 @@ const { id } = Astro.params;
             <!-- Product image -->
             <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
                 <div class="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/06/Manchester-United-logo.png" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="h-full w-full object-cover object-center">
+                    <img :src="`${filteredClubdata.image}`" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="h-full w-full object-cover object-center">
                 </div>
             </div>
 
@@ -186,8 +157,21 @@ const { id } = Astro.params;
                     </form>
                 </section>
             </div>
+            <input type="number" id="temp-id" hidden value={id}>
         </div>
     </div>
     </div>
 
+    <script is:inline>
+        console.log(sourceData[0]);
+        function Clubdata() {
+            return {
+                myForData: sourceData,
+                id: document.getElementById("temp-id").value - 1,
+                get filteredClubdata() {
+                    return this.myForData[this.id];
+                },
+            };
+        }
+    </script>
 </Layout>
