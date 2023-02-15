@@ -6,7 +6,7 @@ const { id } = Astro.params;
 ---
 <!-- This example requires Tailwind CSS v3.0+ -->
 <Layout title="Club">
-    <script type="text/javascript" 
+    <script type="text/javascript"
         src="/src/js/clubdata.js">
     </script>
     <div class="">
@@ -24,7 +24,7 @@ const { id } = Astro.params;
         <div class="px-6 pt-6 lg:px-8">
             <nav class="flex items-center justify-between" aria-label="Global">
                 <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Supporter World </span>
                         <img class="h-8" src="/img/logo.png" alt="">
                     </a>
@@ -62,7 +62,7 @@ const { id } = Astro.params;
                     <h2 id="information-heading" class="sr-only">Product information</h2>
 
                     <div class="flex items-center">
-                        <p class="text-lg text-gray-900 sm:text-xl" x-text="filteredClubdata.your_support + ' (your supported)'"> </p>
+                        <p class="text-lg text-gray-900 sm:text-xl"> $220 (you supported) </p>
 
                         <div class="ml-4 border-l border-gray-300 pl-4">
                             <h2 class="sr-only">Reviews</h2>
@@ -119,10 +119,12 @@ const { id } = Astro.params;
                                         -->
                                         <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
                                     </div>
+                                    </a>
+
 
                                     <!-- Active: "ring-2 ring-indigo-500" -->
+                                    <a href="https://www.williamhill.se/sv" target="_blank">
                                     <div class="relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none">
-                                        <a href="/">
                                         <p id="size-choice-1-label" class="text-base font-medium text-gray-900">William Hill</p>
                                         <p id="size-choice-1-description" class="mt-1 text-sm text-gray-500">£10 on deposit and 10% on your bet earnings</p>
                                         <!--
@@ -130,11 +132,12 @@ const { id } = Astro.params;
                                           Checked: "border-indigo-500", Not Checked: "border-transparent"
                                         -->
                                         <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
-                                        </a>
                                     </div>
+                                    </a>
                                 </div>
                             </fieldset>
                         </div>
+                    </form>
                         <div class="mt-4">
                             <a href="#" class="group inline-flex text-sm text-gray-500 hover:text-gray-700">
                                 <span>Which betting partner should I sign up with?</span>

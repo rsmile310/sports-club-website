@@ -1,0 +1,386 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import clubData from '../../js/clubdata.js';
+
+const { id } = Astro.params;
+
+---
+<!-- This example requires Tailwind CSS v3.0+ -->
+<Layout title="Club">
+    <!--
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+    <!--
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+    <div class="">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden white-3xl sm:top-[-20rem]">
+            <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+                <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                <defs>
+                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9089FC" />
+                        <stop offset="1" stop-color="#FF80B5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="px-6 pt-6 lg:px-8">
+            <nav class="flex items-center justify-between" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Supporter World </span>
+                        <img class="h-8" src="/img/logo.png" alt="">
+                    </a>
+                </div>
+        </div>
+        <div class="bg-white">
+            <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                <!-- Product details -->
+                <div class="">
+                    <nav aria-label="Breadcrumb">
+                        <ol role="list" class="flex items-center space-x-2">
+                            <li>
+                                <div class="flex items-center text-sm">
+                                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Football</a>
+
+                                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="ml-2 h-5 w-5 flex-shrink-0 text-gray-300">
+                                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                                    </svg>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex items-center text-sm">
+                                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Club {id}</a>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <div class="mt-4">
+                        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Manchester United</h1>
+                    </div>
+
+                    <section aria-labelledby="information-heading" class="mt-4">
+                        <h2 id="information-heading" class="sr-only">Product information</h2>
+
+                        <div class="flex items-center">
+                            <p class="text-lg text-gray-900 sm:text-xl"> $220 (you supported) </p>
+
+                            <div class="ml-4 border-l border-gray-300 pl-4">
+                                <h2 class="sr-only">Reviews</h2>
+                                <div class="flex items-center">
+                                    <div>
+
+                                        <p class="sr-only">4 out of 5 stars</p>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">1624 supporters</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+                            <div class="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
+                                <div>
+                                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent news</h2>
+                                    <p class="mt-3 text-xl text-gray-500 sm:mt-4">Follow the club directly here in Supporter.World.</p>
+                                </div>
+
+
+
+
+                                <div class="flow-root mt-8 mb-3 ">
+                                    <ul role="list" class="mb-2">
+                                        <li>
+                                            <div class="relative pb-8">
+                                                <span class="absolute mb-5 top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+                                                <div class="relative flex space-x-3">
+                                                    <div>
+            <span class="h-8 w-8 rounded-full bg-white-500  flex items-center justify-center ring-8 ring-white">
+              <!-- Heroicon name: mini/user -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M483.8 179.4C449.8 74.6 352.6 8 248.1 8c-25.4 0-51.2 3.9-76.7 12.2C41.2 62.5-30.1 202.4 12.2 332.6 46.2 437.4 143.4 504 247.9 504c25.4 0 51.2-3.9 76.7-12.2 130.2-42.3 201.5-182.2 159.2-312.4zm-74.5 193.7l-52.2 6.4-43.7-60.9 24.4-75.2 71.1-22.1 38.9 36.4c-.2 30.7-7.4 61.1-21.7 89.2-4.7 9.3-10.7 17.8-16.8 26.2zm0-235.4l-10.4 53.1-70.7 22-64.2-46.5V92.5l47.4-26.2c39.2 13 73.4 38 97.9 71.4zM184.9 66.4L232 92.5v73.8l-64.2 46.5-70.6-22-10.1-52.5c24.3-33.4 57.9-58.6 97.8-71.9zM139 379.5L85.9 373c-14.4-20.1-37.3-59.6-37.8-115.3l39-36.4 71.1 22.2 24.3 74.3-43.5 61.7zm48.2 67l-22.4-48.1 43.6-61.7H287l44.3 61.7-22.4 48.1c-6.2 1.8-57.6 20.4-121.7 0z"/></svg>
+            </span>
+                                                    </div>
+                                                    <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                                        <div>
+                                                            <p class="text-sm text-gray-500">Next Game<a href="#" class="font-medium text-gray-900"> vs Barcelona</a></p>
+                                                        </div>
+                                                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                                            <time datetime="2020-09-20">Feb 16</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                        <li>
+                                            <div class="relative pb-8">
+                                                <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+                                                <div class="relative flex space-x-3">
+                                                    <div>
+            <span class="h-8 w-8 rounded-full bg-white-500 flex items-center justify-center ring-8 ring-white">
+              <!-- Heroicon name: mini/hand-thumb-up -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M208 96c26.5 0 48-21.5 48-48S234.5 0 208 0s-48 21.5-48 48 21.5 48 48 48zm94.5 149.1l-23.3-11.8-9.7-29.4c-14.7-44.6-55.7-75.8-102.2-75.9-36-.1-55.9 10.1-93.3 25.2-21.6 8.7-39.3 25.2-49.7 46.2L17.6 213c-7.8 15.8-1.5 35 14.2 42.9 15.6 7.9 34.6 1.5 42.5-14.3L81 228c3.5-7 9.3-12.5 16.5-15.4l26.8-10.8-15.2 60.7c-5.2 20.8.4 42.9 14.9 58.8l59.9 65.4c7.2 7.9 12.3 17.4 14.9 27.7l18.3 73.3c4.3 17.1 21.7 27.6 38.8 23.3 17.1-4.3 27.6-21.7 23.3-38.8l-22.2-89c-2.6-10.3-7.7-19.9-14.9-27.7l-45.5-49.7 17.2-68.7 5.5 16.5c5.3 16.1 16.7 29.4 31.7 37l23.3 11.8c15.6 7.9 34.6 1.5 42.5-14.3 7.7-15.7 1.4-35.1-14.3-43zM73.6 385.8c-3.2 8.1-8 15.4-14.2 21.5l-50 50.1c-12.5 12.5-12.5 32.8 0 45.3s32.7 12.5 45.2 0l59.4-59.4c6.1-6.1 10.9-13.4 14.2-21.5l13.5-33.8c-55.3-60.3-38.7-41.8-47.4-53.7l-20.7 51.5z"/></svg>
+            </span>
+                                                    </div>
+                                                    <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                                        <div>
+                                                            <p class="text-sm text-gray-500">Barcelona announce squad <a href="#" class="font-medium text-gray-900">to face United</a></p>
+                                                        </div>
+                                                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                                            <time datetime="2020-09-22">Feb 15</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="relative pb-8">
+                                                <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+                                                <div class="relative flex space-x-3">
+                                                    <div>
+            <span class="h-8 w-8 rounded-full bg-white-500 flex items-center justify-center ring-8 ring-white">
+              <!-- Heroicon name: mini/check -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z"/></svg>
+            </span>
+                                                    </div>
+                                                    <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                                        <div>
+                                                            <p class="text-sm text-gray-500">Pellistri hyped for <a href="#" class="font-medium text-gray-900">Nou Camp return</a></p>
+                                                        </div>
+                                                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                                            <time datetime="2020-09-28">Feb 12</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="relative pb-8">
+                                                <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+                                                <div class="relative flex space-x-3">
+                                                    <div>
+            <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-white">
+              <!-- Heroicon name: mini/hand-thumb-up -->
+              <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M1 8.25a1.25 1.25 0 112.5 0v7.5a1.25 1.25 0 11-2.5 0v-7.5zM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0114 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 01-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 01-1.341-.317l-2.734-1.366A3 3 0 006.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 012.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388z" />
+              </svg>
+            </span>
+                                                    </div>
+                                                    <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                                        <div>
+                                                            <p class="text-sm text-gray-500">We reached <a href="#" class="font-medium text-gray-900">1000 supporters for Manchester United</a></p>
+                                                        </div>
+                                                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                                            <time datetime="2020-09-30">Feb 11</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="relative pb-8">
+                                                <div class="relative flex space-x-3">
+                                                    <div>
+            <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+              <!-- Heroicon name: mini/check -->
+              <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+            </span>
+                                                    </div>
+                                                    <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                                        <div>
+                                                            <p class="text-sm text-gray-500">Your started supporting <a href="#" class="font-medium text-gray-900">Manchester United</a></p>
+                                                        </div>
+                                                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                                            <time datetime="2020-10-04">Feb 4</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+
+                                <form>
+                                    <div class="sm:flex sm:justify-between">
+                                        <!-- Size selector -->
+                                        <fieldset>
+                                            <legend class="block text-sm font-medium text-gray-700">Betting Partners</legend>
+                                            <div class="mt-1 grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                                <!-- Active: "ring-2 ring-indigo-500" -->
+                                                <div class="relative block cursor-pointer rounded-lg border border-black-300 p-4 focus:outline-none">
+                                                    <input type="radio" name="size-choice" value="18L" class="sr-only" aria-labelledby="size-choice-0-label" aria-describedby="size-choice-0-description" disabled>
+                                                    <p id="size-choice-0-label" class="text-base font-medium text-gray-900">bet365</p>
+                                                    <p id="size-choice-0-description" class="mt-1 text-sm text-gray-500">You are currently subscribed. $220 has been generated as support from this connection.</p>
+                                                    <!--
+                                                      Active: "border", Not Active: "border-2"
+                                                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                                                    -->
+                                                    <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
+                                                </div>
+
+                                                <!-- Active: "ring-2 ring-indigo-500" -->
+                                                <div class="relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none">
+                                                    <a href="/">
+                                                        <p id="size-choice-1-label" class="text-base font-medium text-gray-900">William Hill</p>
+                                                        <p id="size-choice-1-description" class="mt-1 text-sm text-gray-500">£10 on deposit and 10% on your bet earnings</p>
+                                                        <!--
+                                                          Active: "border", Not Active: "border-2"
+                                                          Checked: "border-indigo-500", Not Checked: "border-transparent"
+                                                        -->
+                                                        <div class="pointer-events-none absolute -inset-px rounded-lg border-2" aria-hidden="true"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </form>
+
+                                <div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+                                    <div>
+                                        <div>
+                                            <a href="#" class="inline-block">
+                                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">Game</span>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="mt-4 block">
+                                            <p class="text-xl font-semibold text-gray-900">Match analysis</p>
+                                            <p class="mt-3 text-base text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                                        </a>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="flex-shrink-0">
+                                                <a href="#">
+                                                    <span class="sr-only">Paul York</span>
+                                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="text-sm font-medium text-gray-900">
+                                                    <a href="#">Paul York</a>
+                                                </p>
+                                                <div class="flex space-x-1 text-sm text-gray-500">
+                                                    <time datetime="2020-03-16">Feb 15, 2023</time>
+                                                    <span aria-hidden="true">&middot;</span>
+                                                    <span>6 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <a href="#" class="inline-block">
+                                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">Video</span>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="mt-4 block">
+                                            <p class="text-xl font-semibold text-gray-900">United in Premier League</p>
+                                            <p class="mt-3 text-base text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                                        </a>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="flex-shrink-0">
+                                                <a href="#">
+                                                    <span class="sr-only">Dessie Ryan</span>
+                                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="text-sm font-medium text-gray-900">
+                                                    <a href="#">Dessie Ryan</a>
+                                                </p>
+                                                <div class="flex space-x-1 text-sm text-gray-500">
+                                                    <time datetime="2020-03-10">Feb 3, 2023</time>
+                                                    <span aria-hidden="true">&middot;</span>
+                                                    <span>4 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <a href="#" class="inline-block">
+                                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Merch</span>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="mt-4 block">
+                                            <p class="text-xl font-semibold text-gray-900">Fan Engagement</p>
+                                            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.</p>
+                                        </a>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="flex-shrink-0">
+                                                <a href="#">
+                                                    <span class="sr-only">Easer Collins</span>
+                                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="text-sm font-medium text-gray-900">
+                                                    <a href="#">Easer Collins</a>
+                                                </p>
+                                                <div class="flex space-x-1 text-sm text-gray-500">
+                                                    <time datetime="2020-02-12">Feb 11, 2023</time>
+                                                    <span aria-hidden="true">&middot;</span>
+                                                    <span>11 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</Layout>
