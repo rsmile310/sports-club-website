@@ -1,0 +1,27 @@
+---
+export interface Props {
+    title: string;
+
+}
+
+const { title } = Astro.props;
+
+
+
+---
+
+<!doctype html>
+<html class="h-full bg-gray-100">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <!--Fuse-->
+    <script is:inline src="https://cdn.jsdelivr.net/npm/fuse-js-latest@3.1.0/dist/fuse.min.js" />
+    <script is:inline defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" />
+
+</head>
+<body class="h-full">
+    <slot />
+</body>
+</html>
